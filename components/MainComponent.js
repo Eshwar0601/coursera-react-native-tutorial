@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
 import Menu from './MenuComponent';
 import { DISHES } from '../shared/dishes';
+import { Text, View } from 'react-native';
 
 class Main extends Component {
-  constructer(props) {
+  constructor(props) {
     super(props);
     this.state = {
-      dishes:DISHES
-    }
+      dishes: DISHES
+    };
   }
 
   render() {
-    return(
-      <Menu dishes={this.state.dishes}/>
+    return (
+      <Menu dishes={this.state.dishes} />
     );
   }
 }
